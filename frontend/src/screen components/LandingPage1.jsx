@@ -13,9 +13,6 @@ function LandingPage1() {
         width: 1,
         margin:"0",
         padding:"0"}}> 
-
-
-            
         </Container>
     </>
   )

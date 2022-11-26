@@ -5,7 +5,7 @@ import Chatbot from './Chatbot'
 import Homepage from '../screen/Homepage'
 import Nav from './Nav';
 import Booking from '../screen/Booking';
-import Activities from '../screen/Activities';
+import Accomodation from '../screen components/Accomodation';
 
 
 
@@ -18,7 +18,7 @@ function App() {
           <Routes>
             <Route path='/' exact element={<Homepage />}/> 
             <Route path='/booking' element={<Booking />}/>
-            <Route path='/activities' element={<Activities />}/>
+            <Route path='/accomodation' element={<Accomodation/>} />
           </Routes>
         </div>
       </Router>

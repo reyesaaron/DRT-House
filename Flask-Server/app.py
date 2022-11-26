@@ -19,7 +19,7 @@ CORS(app)
 #     print("The website is running in http://127.0.0.1:5000/")
 #     return render_template("base.html")
 
-
+    
 @app.post("/predict")
 @cross_origin()
 def predict():
