@@ -5,6 +5,7 @@ import Chatbot from './Chatbot'
 import Homepage from '../screen/Homepage'
 import Nav from './Nav';
 import Booking from '../screen/Booking';
+import Activities from '../screen/Activities';
 
 
 
@@ -17,6 +18,7 @@ function App() {
           <Routes>
             <Route path='/' exact element={<Homepage />}/> 
             <Route path='/booking' element={<Booking />}/>
+            <Route path='/activities' element={<Activities />}/>
           </Routes>
         </div>
       </Router>

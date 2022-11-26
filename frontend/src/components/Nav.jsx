@@ -25,7 +25,7 @@ function Nav() {
                     <Box sx={{display:"flex", height:"0px", width:1, justifyContent:"center", color:"black"}}>
                             <Link to="/"><Typography sx={{margin:"10px"}}>DRT HOUSE</Typography></Link>
                             <Typography sx={{margin:"10px"}}>ACCOMODATION</Typography>
-                            <Typography sx={{margin:"10px"}}>ACTIVITIES</Typography>
+                            <Link to="/activities"><Typography sx={{margin:"10px"}}>ACTIVITIES</Typography></Link>
                             <Typography sx={{margin:"10px"}}>TOUR</Typography>
                             <Typography sx={{margin:"10px"}}>COVID PROTOCOL</Typography>
                             <Typography sx={{margin:"10px"}}>CONTACT US</Typography>
