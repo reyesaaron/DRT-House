@@ -5,7 +5,7 @@ import Chatbot from './Chatbot'
 import Homepage from '../screen/Homepage'
 import Nav from './Nav';
 import Booking from '../screen/Booking';
-import Accomodation from '../screen components/Accomodation';
+import Accomodation from '../screen components/LP3Accomodation';
 
 
 

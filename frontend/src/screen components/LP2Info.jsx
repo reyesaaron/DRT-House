@@ -9,7 +9,11 @@ import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import HouseSidingIcon from '@mui/icons-material/HouseSiding';
 import BungalowIcon from '@mui/icons-material/Bungalow';
 
+const date = new Date()
+const time = date.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })
+
 function LP2Info() {
+
   return (
     <> 
     <CssBaseline />
@@ -17,16 +21,16 @@ function LP2Info() {
     maxWidth="false"
     sx={{backgroundImage: `url(/static/images/LP2BG.png)`, 
     width: 1,
-    height: "100vh",
     padding:"50px 0",
+    backgroundSize:"cover"
     }}> 
 
       <Grid container spacing={{ xs: 2, md: 3, lg:5}} columns={{ xs: 4, sm: 8, md: 12 }} sx={{display:"flex", padding:"0% 10%"}}>
         <Grid item xs={12}>
-          <Typography sx={{textAlign:"center"}}>DRT House</Typography>
+          <Typography sx={{textAlign:"center", fontFamily:"Raleway", fontWeight:"Bold"}}>DRT HOUSE</Typography>
         </Grid>
         <Grid item xs={12}>
-          <Typography sx={{textAlign:"center"}}>THE BEST TRANSIENT HOUSE IN THE DOÑA REMEDIOS TRINIDAD WHERE NATURE AND SECLUSION COMBINE</Typography>
+          <Typography sx={{textAlign:"center", fontFamily:"Kaisei HarunoUmi", fontWeight:"Bold", fontSize:"40px"}}>THE BEST TRANSIENT HOUSE IN THE <br/>DOÑA REMEDIOS TRINIDAD <br/>WHERE NATURE AND SECLUSION COMBINE</Typography>
         </Grid>
         <Grid item xs={6}>
           <Box>
@@ -34,12 +38,12 @@ function LP2Info() {
           </Box>
         </Grid>
         <Grid item xs={6}>
-          <Typography sx={{marginBottom:"20px"}}>LOCAL TIME 2:00 PM | WEATHER 31'C 87.8'F</Typography>
-          <Typography>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis voluptatum ratione quo voluptate a eligendi deleniti, ipsum unde, veniam explicabo repellat odit sapiente mollitia magnam quod? Molestiae dolore numquam odit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero possimus labore quisquam ea! Consectetur reprehenderit, itaque voluptates saepe officiis corporis placeat sunt dolores perferendis? Distinctio expedita saepe culpa optio officia?</Typography>
+          <Typography sx={{marginBottom:"20px", fontFamily:"Raleway", fontWeight:"600"}}>LOCAL TIME {time} | WEATHER 31'C 87.8'F</Typography>
+          <Typography sx={{fontFamily:"Raleway", fontWeight:"500", color:"#454545"}}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis voluptatum ratione quo voluptate a eligendi deleniti, ipsum unde, veniam explicabo repellat odit sapiente mollitia magnam quod? Molestiae dolore numquam odit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero possimus labore quisquam ea! Consectetur reprehenderit, itaque voluptates saepe officiis corporis placeat sunt dolores perferendis? Distinctio expedita saepe culpa optio officia?</Typography>
           <br></br>
-          <Typography>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis voluptatum ratione quo voluptate a eligendi deleniti, ipsum unde, veniam explicabo repellat odit sapiente mollitia magnam quod? Molestiae dolore numquam odit!</Typography>
+          <Typography sx={{fontFamily:"Raleway", fontWeight:"500", color:"#454545"}}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis voluptatum ratione quo voluptate a eligendi deleniti, ipsum unde, veniam explicabo repellat odit sapiente mollitia magnam quod? Molestiae dolore numquam odit!</Typography>
           <br/><hr/><br/>
-        <Link to="/"><Typography>READ REVIEWS</Typography></Link>
+        <Link to="/" style={{textDecoration:"none", color:"black"}}><Typography sx={{fontFamily:"Raleway", fontWeight:"600", color:"Black"}}>READ REVIEWS</Typography></Link>
 
         </Grid>
         <Grid item xs={8}>

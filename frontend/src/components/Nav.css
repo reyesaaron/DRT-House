@@ -1,0 +1,28 @@
+.linkStyle{
+    font-family: "Raleway";
+    font-size: 12px;
+    font-weight: "600";
+}
+
+.btn-bd-primary {
+    --bs-btn-font-weight: 600;
+    --bs-btn-font-family: "Raleway";
+    --bs-btn-color: white;
+    --bs-btn-font-size: "12px";
+    --bs-btn-bg: #8FBDF2;
+    --bs-btn-border-color: var(--bd-violet);
+    --bs-btn-border-radius: 0;
+    --bs-btn-hover-color: black;
+    --bs-btn-hover-bg: white;
+    --bs-btn-padding-x:50px;
+    --bs-btn-padding-y:10px;
+    position: absolute;
+    right: 20px;
+    top: 150px;
+  }
+
+  @media(max-width: 991px) {
+    .btn-bd-primary {
+        position: inherit;
+    }
+  }
