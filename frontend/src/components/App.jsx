@@ -5,6 +5,10 @@ import Chatbot from './Chatbot'
 import Homepage from '../screen/Homepage'
 import Nav from './Nav';
 import Booking from '../screen/Booking';
+import Activities from '../screen/Activities';
+import Covid from '../screen/Covid';
+import Footer from './Footer';
+import Contact from '../screen/Contact';
 import Accomodation from '../screen components/LP3Accomodation';
 
 
@@ -18,8 +22,12 @@ function App() {
           <Routes>
             <Route path='/' exact element={<Homepage />}/> 
             <Route path='/booking' element={<Booking />}/>
+            <Route path='/activities' element={<Activities/>} />
             <Route path='/accomodation' element={<Accomodation/>} />
+            <Route path='/protocol' element={<Covid/>} />
+            <Route path='/contacts' element={<Contact/>} />
           </Routes>
+          <Footer />
         </div>
       </Router>
   )

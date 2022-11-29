@@ -27,19 +27,19 @@ function Nav() {
                 <a className="nav-link active linkStyle" aria-current="page" href="/">DRT HOUSE</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link linkStyle" href="/">ACCOMODATION</a>
+                <a className="nav-link linkStyle" href="#lp3">ACCOMODATION</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link linkStyle" href="/">ACTIVITIES</a>
+                <a className="nav-link linkStyle" href="/activities">ACTIVITIES</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link linkStyle" href="/">TOUR</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link linkStyle" href="/">COVID PROTOCOL</a>
+                <a className="nav-link linkStyle" href="/protocol">COVID PROTOCOL</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link linkStyle" href="/">CONTACT US</a>
+                <a className="nav-link linkStyle" href="/contacts">CONTACT US</a>
               </li>
               <li className="nav-item">
                 <Link to="/" className='linkStyle'>
