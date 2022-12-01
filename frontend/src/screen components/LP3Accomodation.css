@@ -1,0 +1,17 @@
+.boxStyle {
+    display: "flex";
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.boxStyleActivate {
+    background-color: #14102B;
+    padding: 1rem 3rem;
+    width: 33.33%;
+}
+
+.boxStyleDeactivate {
+    background-color: #8FBDF2;
+    padding: 1rem 3rem;
+    width: 33.33%;
+}

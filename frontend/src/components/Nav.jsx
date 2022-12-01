@@ -27,13 +27,13 @@ function Nav() {
                 <a className="nav-link active linkStyle" aria-current="page" href="/">DRT HOUSE</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link linkStyle" href="#lp3">ACCOMODATION</a>
+                <a className="nav-link linkStyle" href="/accomodation">ACCOMODATION</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link linkStyle" href="/activities">ACTIVITIES</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link linkStyle" href="/">TOUR</a>
+                <a className="nav-link linkStyle" href="/tour">TOUR</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link linkStyle" href="/protocol">COVID PROTOCOL</a>
@@ -42,7 +42,7 @@ function Nav() {
                 <a className="nav-link linkStyle" href="/contacts">CONTACT US</a>
               </li>
               <li className="nav-item">
-                <Link to="/" className='linkStyle'>
+                <Link to="/booking" className='linkStyle'>
                   <button type="button" className="btn btn-bd-primary">BOOK NOW</button>
                 </Link>
               </li>

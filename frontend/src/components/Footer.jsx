@@ -8,7 +8,7 @@ import Grid from '@mui/material/Unstable_Grid2';
 function Footer() {
     return (
         <footer>
-            <Grid container>
+            <Grid container columns={{ xs: 4, sm: 8, md: 12 }} sx={{ display: "flex"}}>
                 <Grid xs={12}>
                     <div style={{ height: "150px", background: "#332D2D" }}>
                         <Typography textAlign="center" style={{ fontFamily: "Raleway", fontWeight: "regular", fontSize: "12px", color: "white", paddingTop: "1rem" }}>

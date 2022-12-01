@@ -12,8 +12,7 @@ function LP5Location() {
         maxWidth="false"
         id="lp5"
         sx={{
-          width: 1,
-          height:"100vh", 
+          width: 1
         }}>
         <Grid container columns={{ xs: 4, sm: 8, md: 12 }} sx={{ display: "flex",padding:"5% 10%"  }}>
             <Grid item xs={12}>
