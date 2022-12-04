@@ -1,7 +1,6 @@
 import React from 'react'
 import { Typography } from '@mui/material'
 import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import Grid from '@mui/material/Unstable_Grid2';
 
@@ -15,9 +14,8 @@ function Footer() {
                             Get in touch
                         </Typography>
                         <Typography textAlign="center" style={{ paddingTop: "5px" }}>
-                            <FacebookIcon sx={{ color: "white", fontSize: "30px", paddingLeft: "5px", paddingRight: "5px" }} />
-                            <TwitterIcon sx={{ color: "white", fontSize: "30px", paddingLeft: "5px", paddingRight: "5px" }} />
-                            <InstagramIcon sx={{ color: "white", fontSize: "30px", paddingLeft: "5px", paddingRight: "5px" }} />
+                            <a href='https://www.facebook.com/DRTHouseee' target="blank"><FacebookIcon sx={{ color: "white", fontSize: "30px", paddingLeft: "5px", paddingRight: "5px" }} /></a>
+                            <a href="https://www.instagram.com/drthouseofficial/" target="blank"><InstagramIcon sx={{ color: "white", fontSize: "30px", paddingLeft: "5px", paddingRight: "5px" }} /></a>
                         </Typography>
                         <Typography textAlign="center" style={{ fontFamily: "Kaisei HarunoUmi", fontWeight: "regular", fontSize: "24px", color: "white" }}>
                             DRT House

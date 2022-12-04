@@ -8,9 +8,8 @@ import Rating from '@mui/material/Rating';
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import "./LP3Accomodation.css"
-import { Link } from "react-router-dom";
 
-const fontStyle = { fontFamily: "Raleway", fontWeight: "Bold", fontSize: "12px", color: "white" }
+const fontStyle = { fontFamily: "Raleway", fontWeight: "Bold", fontSize: "12px", color: "white", display:"flex", justifyContent:"center" }
 
 function Accomodation() {
   const [activate, setActivate] = useState("home")
@@ -149,13 +148,13 @@ function Accomodation() {
             <Grid item xs={4}>
               <Typography sx={{ fontFamily: "Kaisei HarunoUmi", fontWeight: "Bold", fontSize: "30px", marginTop: "15%" }}>Home</Typography>
               <Typography sx={{ fontFamily: "Raleway", fontSize: "14px", fontWeight: "500", color: "#454545", margin: "5% 0" }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita officiis fuga modi animi, asperiores at nobis quos quis suscipit laborum possimus eaque quo voluptatem quaerat, unde labore porro incidunt saepe! <br /> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo minima sapiente nihil sequi nostrum, ipsum quidem magnam voluptate optio provident voluptas quo accusamus similique rem aperiam dolorem repellendus eligendi magni?</Typography>
-              <Link to="/accomodation"><Button variant="contained" sx={{ backgroundColor: "#14102A", borderRadius: "0px", fontFamily: "Raleway", fontWeight: "500", fontSize: "14px", width: "100%" }}>VIEW ALL ACCOMMODATION</Button></Link>
+              <a href="/accomodation" style={{textDecoration:"none"}}><Button variant="contained" sx={{ backgroundColor: "#14102A", borderRadius: "0px", fontFamily: "Raleway", fontWeight: "500", fontSize: "14px", width: "100%" }}>VIEW ALL ACCOMMODATION</Button></a>
             </Grid> : <div></div>}
           {activate === "hut" ?
             <Grid item xs={4}>
               <Typography sx={{ fontFamily: "Kaisei HarunoUmi", fontWeight: "Bold", fontSize: "30px", marginTop: "15%" }}>Nipa and Teepee Huts</Typography>
               <Typography sx={{ fontFamily: "Raleway", fontSize: "14px", fontWeight: "500", color: "#454545", margin: "5% 0" }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita officiis fuga modi animi, asperiores at nobis quos quis suscipit laborum possimus eaque quo voluptatem quaerat, unde labore porro incidunt saepe! <br /> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo minima sapiente nihil sequi nostrum, ipsum quidem magnam voluptate optio provident voluptas quo accusamus similique rem aperiam dolorem repellendus eligendi magni?</Typography>
-              <Link to="/accomodation"><Button variant="contained" sx={{ backgroundColor: "#14102A", borderRadius: "0px", fontFamily: "Raleway", fontWeight: "500", fontSize: "14px", width: "100%" }}>VIEW ALL ACCOMMODATION</Button></Link>
+              <a href="/accomodation" style={{textDecoration:"none"}}><Button variant="contained" sx={{ backgroundColor: "#14102A", borderRadius: "0px", fontFamily: "Raleway", fontWeight: "500", fontSize: "14px", width: "100%" }}>VIEW ALL ACCOMMODATION</Button></a>
             </Grid> : <div></div>}
           {activate === "pool" ?
             <Grid item xs={4}>
@@ -166,22 +165,22 @@ function Accomodation() {
                 <li>Nature View</li>
                 <li>Kiddie Friendly</li>
               </ul>
-              <Link to="/accomodation"><Button variant="contained" sx={{ backgroundColor: "#14102A", borderRadius: "0px", fontFamily: "Raleway", fontWeight: "500", fontSize: "14px", width: "100%" }}>VIEW ALL ACCOMMODATION</Button></Link>
+              <a href="/accomodation" style={{textDecoration:"none"}}><Button variant="contained" sx={{ backgroundColor: "#14102A", borderRadius: "0px", fontFamily: "Raleway", fontWeight: "500", fontSize: "14px", width: "100%" }}>VIEW ALL ACCOMMODATION</Button></a>
             </Grid> : <div></div>}
         </Grid>
-
       </Container>
 
       <Grid container spacing={{ xs: 2, md: 3, lg: 5 }} columns={{ xs: 4, sm: 8, md: 12 }}
         sx={{
           display: "flex", padding: "5% 5%", textAlign: "center",
           backgroundImage: `url(/static/images/LP3images/lp3bg.png)`,
+          backgroundPosition:"center",
           backgroundSize: "cover",
           justifyContent: "center"
         }}>
-        <Grid container item xs={12} md={6}>
+        <Grid container item xs={12} md={4}>
           <Grid item xs={12}>
-            <Typography sx={{ fontFamily: "Kaisei HarunoUmi", fontSize: "45px" }}>90%</Typography>
+            <Typography sx={{ fontFamily: "Kaisei HarunoUmi", fontSize: "45px", fontWeight:"bold" }}>90%</Typography>
           </Grid>
           <Grid item xs={12}>
             <Typography sx={{ fontFamily: "Raleway", fontWeight: "400", fontSize: "14px", color: "#454545" }}>of our guest <br />would recommend this transient</Typography><hr></hr>
@@ -190,22 +189,22 @@ function Accomodation() {
             <Rating name="read-only" value={4} readOnly />
           </Grid>
           <Grid item xs={6}>
-            <Typography sx={{ fontFamily: "Raleway", fontSize: "14px" }}>SERVICE</Typography>
+            <Typography sx={{ fontFamily: "Raleway", fontSize: "14px", fontWeight:"bold" }}>SERVICE</Typography>
           </Grid>
           <Grid item xs={6}>
             <Rating name="read-only" value={4} readOnly />
           </Grid>
           <Grid item xs={6}>
-            <Typography sx={{ fontFamily: "Raleway", fontSize: "14px" }}>LOCATION</Typography>
+            <Typography sx={{ fontFamily: "Raleway", fontSize: "14px", fontWeight:"bold" }}>LOCATION</Typography>
           </Grid>
           <Grid item xs={6}>
             <Rating name="read-only" value={4} readOnly />
           </Grid>
           <Grid item xs={6}>
-            <Typography sx={{ fontFamily: "Raleway", fontSize: "14px" }}>VALUE</Typography>
+            <Typography sx={{ fontFamily: "Raleway", fontSize: "14px", fontWeight:"bold" }}>VALUE</Typography>
           </Grid>
         </Grid>
-        <Grid container item xs={6}>
+        <Grid container item xs={12} md={4}>
           <Grid item xs={12}>
           <Typography sx={{ fontFamily: "Raleway", fontSize: "12px", fontWeight: "600" }}>IN THEIR WORDS</Typography>
           </Grid>

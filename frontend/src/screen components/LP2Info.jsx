@@ -4,7 +4,6 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import { Typography } from '@mui/material';
 import Box from '@mui/material/Box';
-import { Link } from 'react-router-dom';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import HouseSidingIcon from '@mui/icons-material/HouseSiding';
 import BungalowIcon from '@mui/icons-material/Bungalow';
@@ -43,7 +42,7 @@ function LP2Info() {
           <br></br>
           <Typography sx={{fontFamily:"Raleway", fontWeight:"500", color:"#454545"}}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis voluptatum ratione quo voluptate a eligendi deleniti, ipsum unde, veniam explicabo repellat odit sapiente mollitia magnam quod? Molestiae dolore numquam odit!</Typography>
           <br/><hr/><br/>
-        <Link to="/" style={{textDecoration:"none", color:"black"}}><Typography sx={{fontFamily:"Raleway", fontWeight:"600", color:"Black"}}>READ REVIEWS</Typography></Link>
+        <a href="https://www.facebook.com/DRTHouseee/reviews" target="blank" style={{textDecoration:"none", color:"black"}}><Typography sx={{fontFamily:"Raleway", fontWeight:"600", color:"Black"}}>READ REVIEWS</Typography></a>
 
         </Grid>
         <Grid item xs={8}>

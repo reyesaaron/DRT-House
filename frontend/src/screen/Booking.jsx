@@ -1,8 +1,19 @@
+import { CssBaseline } from '@mui/material'
+import { Container } from '@mui/system'
 import React from 'react'
 
 function Booking() {
+  console.log(window.Simplybook);
+  
   return (
-    <div>Booking</div>
+    <>
+      <CssBaseline />
+      <Container maxWidth="false"
+        id="booking">
+        
+      </Container>
+
+    </>
   )
 }
 
