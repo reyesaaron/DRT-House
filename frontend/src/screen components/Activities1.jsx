@@ -7,7 +7,7 @@ import Grid from '@mui/material/Unstable_Grid2';
 
 export default function Activities1() {
     return (
-        <Box style={{ paddingBottom: "6rem"}}>
+        <Box style={{ paddingBottom: "6rem" }}>
             <Typography variant="h3" style={{ textAlign: "center", paddingTop: "250px", fontFamily: "Kaisei HarunoUmi", letterSpacing: "10px" }}>
                 ACTIVITIES
             </Typography>
@@ -83,6 +83,5 @@ export default function Activities1() {
                 </Grid>
             </Grid>
         </Box>
-
     )
 }
