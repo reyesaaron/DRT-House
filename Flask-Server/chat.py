@@ -18,7 +18,7 @@ collection2 = database.logs
 # with open('intents.json', 'r') as json_data:
 #     intents = json.load(json_data)
 
-FILE = "data.pth"
+FILE = "../data.pth"
 data = torch.load(FILE)
 
 input_size = data["input_size"]
